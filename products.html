@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="/products.css">
+    <link rel="stylesheet" href="products.css">
+        <title>Продукция</title>
+  </head>
+  <body> 
+<table>
+  <tr>
+    <th>Наименование</th>
+    <th>Описание</th>
+    <th>Цена</th>
+    <th>Фото</th>
+    <th></th>
+  </tr>
+  <form action="/products"  method='POST'>
+  <tr>
+    <input type="hidden" value="{{row.id}}" name='item_id'>
+    <td>{{row.name}}</td>
+    <td>{{row.description}}</td>
+    <td>{{row.price}}</td>
+    <td><img src="{{row.image}}"  width="120" height="90" /></td>
+    <td><button type="submit">В корзину</button></td>
+  </tr>
+  </form>
+</table>
+</body> 
+</html> 

@@ -1,0 +1,9 @@
+img {
+    float: left;
+    border: double 5px #a13f3f;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+body{
+    background-color: #a13f3f;
+}

@@ -1,0 +1,83 @@
+body {
+    background-color: #a1425e;
+    margin: 0;
+}
+header {
+    height: 60px; /* Высота шапки */
+    background-color: #f08080; /* Цвет фона  */
+    display: flex; /* Включаем гибкость блока */
+}
+ul {
+    list-style: none; /* Убираем маркеры в списке */
+    display: flex; /* Включаем гибкость блока */
+    justify-content: start; /* Выравниваем по левому краю ссылки */
+}
+  
+li a {
+    color: white; /* Цвет текста */
+    padding: 22px; /* Создаем поля вокруг ссылок по 22 пикселя */
+    font-size: 20px; /* Размер шрифта */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+  
+li a:hover {
+    background-color: #000000; /* Цвет фона при наведении на кнопку */
+}
+
+.card {
+    display: inline-block;
+    width: 40%;
+    margin: 3%;
+    background-color: #f08080;
+    border: double 5px #a1425e;
+    text-decoration: none; 
+}
+h1{
+   font-family: Garamond;
+}
+
+.card a {
+    text-decoration: none;
+}
+.main {
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #f08080;
+}
+.prom {
+    color: #a1425e;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.btn-group button {
+    font-size:20px;
+    background-color: #a83149; /* фон */
+    border: 3px solid #a83149; /* border */
+    padding: 40px 24px; /* Немного отступа */
+    cursor: pointer; /* Указатель/значок руки */
+    width: 75%; /* Установите ширину, если это необходимо */
+    display: block; /* Сделайте так, чтобы кнопки располагались друг под другом */
+  }
+
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Предотвращение двойных границ */
+  }
+  
+  /* Добавление цвета фона при наведении курсора */
+  .btn-group button:hover {
+    background-color: #e78e8e;
+  }
+  .btn-group a {
+    text-decoration: none;
+    color: white;
+  }
+  .btn-group{
+    background-color: #a83149;
+    position: fixed;
+    height: 100%;
+  }
+
+

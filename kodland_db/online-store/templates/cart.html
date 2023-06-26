@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block head %}
+<link rel="stylesheet" href="/static/css/cart.css">
+{% endblock %}
+
+{% block content %}
+<form action='/order' method='post'>
+<li>
+            <button type="submit">Нажми на меня!</button>
+        </li>
+</form>
+{% endblock %}

@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    background-color: red;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+    animation-delay: 2s;
+    animation-fill-mode:forwards;
+    animation-direction:alternate;
+    animation-timing-function:ease-in;
+    animation-play-state:paused;
+}
+.el{
+  animation: anim1 1s ease-in-out forwards;
+}
+@keyframes anim1 {
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1.5);
+        background-color: red;
+        animation-timing-function:ease-in;
+    }
+}
+div:hover{
+    animation-play-state:paused;
+}
